@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llTitleString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTitleString"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="input" />
+
+        <Button
+            android:id="@+id/btnTitleString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="change" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTitleString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txtTitleString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTitleString" />
+
+    <LinearLayout
+        android:id="@+id/llTitleBool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleString">
+
+        <Switch
+            android:id="@+id/switchBool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTitleBool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txtTitleBool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTitleBool" />
+
+    <LinearLayout
+        android:id="@+id/llTitleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleBool">
+
+        <EditText
+            android:id="@+id/editTitleNumber"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="input" />
+
+        <Button
+            android:id="@+id/btnTitleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="change" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTitleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txtTitleNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTitleNumber" />
+
+    <LinearLayout
+        android:id="@+id/llTitleJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleNumber">
+
+        <EditText
+            android:id="@+id/editTitleJson"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="input" />
+
+        <Button
+            android:id="@+id/btnTitleJson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="change" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTitleJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txtTitleJson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTitleJson" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
